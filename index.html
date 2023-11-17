@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Flipper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input type="file" id="imageInput" accept="image/*" class="input-file">
+    <div class="buttons-container">
+      <button onclick="flipHorizontal()" class="btn">Flip Horizontal</button>
+      <button onclick="flipVertical()" class="btn">Flip Vertical</button>
+      <button onclick="flipBoth()" class="btn">Flip Both</button>
+      <button onclick="resetImage()" class="btn">Reset</button>
+      <button onclick="downloadImage()" class="btn">Download</button>
+    </div>
+    <canvas id="canvas" class="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
